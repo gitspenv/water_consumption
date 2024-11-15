@@ -21,4 +21,4 @@ df = df[(df['Wasserverbrauch'] >= lower_bound) & (df['Wasserverbrauch'] <= upper
 # Convert all columns to numeric (float64), invalid values will be set as NaN
 df = df.apply(pd.to_numeric, errors='coerce')
 
-#print(df.columns)
+print(df.columns)
